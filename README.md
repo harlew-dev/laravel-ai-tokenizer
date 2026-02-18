@@ -3,6 +3,8 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/harlew-dev/laravel-ai-tokenizer.svg?style=flat-square)](https://packagist.org/packages/harlew-dev/laravel-ai-tokenizer)
 [![Total Downloads](https://img.shields.io/packagist/dt/harlew-dev/laravel-ai-tokenizer.svg?style=flat-square)](https://packagist.org/packages/harlew-dev/laravel-ai-tokenizer)
 
+> This package is currently under development and testing and will be fully released soon.
+
 Token counting and token-visualization helpers for Laravel AI SDK applications. Includes agent-aware estimation that mirrors Laravel AI message and tool payload construction.
 
 ## Installation
