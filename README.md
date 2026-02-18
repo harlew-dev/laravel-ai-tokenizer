@@ -21,9 +21,7 @@ php artisan vendor:publish --tag="tokenizer-config"
 
 ## Usage
 
-### Agent tokenization (recommended)
-
-The recommended approach is to implement `HasTokenization` and add the `Tokenizable` trait directly on your agent class. This lets you call `$agent->tokenize(...)` wherever the agent is used, keeping tokenization co-located with the agent.
+Implement `HasTokenization` and add the `Tokenizable` trait directly on your agent class.
 
 ```php
 use HarlewDev\Tokenizer\Concerns\Tokenizable;
@@ -51,11 +49,11 @@ $tokens = $agent->tokenize(
 );
 ```
 
-The estimate covers system instructions, conversation history, tools, structured output schema, the prompt, attachments, and provider message-framing overhead — mirroring how the Laravel AI SDK constructs the actual request payload.
+The estimate covers system instructions, conversation history, tools, structured output schema, the prompt, attachments, and provider message-framing overhead. Mirroring how the Laravel AI SDK constructs the actual request payload.
 
-### Direct estimation (fallback)
+### Direct estimation
 
-If you do not own the agent class, or prefer not to add the interface, use the facade directly:
+You can also use the facade directly for an agent:
 
 ```php
 use HarlewDev\Tokenizer\Facades\Tokenizer;
